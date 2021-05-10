@@ -57,7 +57,7 @@ public class FileDAO {
 		try {
 			Statement comandoSql = con.createStatement();
 			
-			String sql = "insert into file values ('"+uc.getName()+"','"+uc.getDir()+uc.getName()+"','"+project+"')";
+			String sql = "insert into file values ('"+uc.getName()+"','"+uc.getDir()+"/"+uc.getName()+"','"+project+"')";
 			System.out.println(sql);
 			
 			comandoSql.executeUpdate(sql);
@@ -96,7 +96,7 @@ public class FileDAO {
 		try {
 			Statement comandoSql = con.createStatement();
 			
-			String sql = "insert into \"file_API\" values ('"+uc.getDir()+uc.getName()+"','"+api.getFullName()+"')";
+			String sql = "insert into \"file_API\" values ('"+uc.getDir()+"/"+uc.getName()+"','"+api.getFullName()+"')";
 			System.out.println(sql);
 			
 			comandoSql.executeUpdate(sql);
