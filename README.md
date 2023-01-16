@@ -2,6 +2,8 @@
 Parser to identify libraries in source code. Research project with a huge pipeline that starts with this parser.
 Works only with java.
 
+It looks for and reads source code files (Java, C++ or C#) in a directory recursively. It updates the tables priject, file, API and file_API. 
+
 /*List of parameters:
 		/*List of parameters:
 
